@@ -1,0 +1,6 @@
+PyYAML
+awscli
+boto3
+botocore
+ipaddress
+requests
