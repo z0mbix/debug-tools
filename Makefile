@@ -4,7 +4,7 @@ build: ## Build docker image
 	docker build -t z0mbix/debug-tools:latest .
 
 run: ## Run docker container
-	docker run -it --name debugger z0mbix/debug-tools:latest
+	docker run -it --rm --name debugger z0mbix/debug-tools:latest
 
 publish: ## Publish docker image to dockerhub
 	docker push z0mbix/debug-tools:latest
