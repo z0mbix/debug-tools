@@ -15,20 +15,28 @@ RUN chmod +x /usr/bin/kubectl && \
 		bwm-ng \
 		bzip2 \
 		curl \
+		gawk \
 		git \
 		gzip \
 		jq \
+		mosh-client \
+		mysql-client \
 		netcat-openbsd \
 		ngrep \
 		nmap \
 		nmap-ncat \
 		nmap-nping \
+		nodejs \
 		openssh-client \
 		openssl \
+		postgresql-client \
 		python3 \
+		py3-psycopg2 \
 		redis \
 		rsync \
+		sed \
 		socat \
+		tar \
 		tmux \
 		unzip \
 		vim \

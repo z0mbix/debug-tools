@@ -3,4 +3,6 @@ awscli
 boto3
 botocore
 ipaddress
+ipython
+pipenv
 requests
