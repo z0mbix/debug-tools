@@ -4,5 +4,7 @@ boto3
 botocore
 ipaddress
 ipython
+kubernetes
 pipenv
+redis
 requests

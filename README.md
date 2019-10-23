@@ -17,6 +17,7 @@ This will give you a bash shell
 - bwm-ng
 - bzip2
 - curl
+- gcc
 - git
 - gzip
 - jq
@@ -44,4 +45,8 @@ This will give you a bash shell
 - boto3
 - botocore
 - ipaddress
+- ipython
+- kubernetes
+- pipenv
+- redis
 - requests
