@@ -22,17 +22,22 @@ This will give you a bash shell
 - gzip
 - jq
 - kubectl
-- netcat-openbsd
+- mysql client
+- netcat
 - ngrep
 - nmap
 - nmap-ncat
 - nmap-nping
-- openssh-client
+- nodejs
+- openssh client
 - openssl
+- pipenv
+- postgresql client
 - python3
-- redis
+- redis-cli
 - rsync
 - socat
+- ssh
 - tmux
 - unzip
 - vim
