@@ -16,6 +16,7 @@ This will give you a bash shell
 - bind-tools
 - bwm-ng
 - bzip2
+- consul
 - curl
 - gcc
 - git
@@ -38,6 +39,7 @@ This will give you a bash shell
 - rsync
 - socat
 - ssh
+- step
 - tmux
 - unzip
 - vim

@@ -43,6 +43,8 @@ RUN chmod +x /usr/bin/kubectl && \
 	vim \
 	wget \
 	&& \
+	curl -sL https://github.com/smallstep/cli/releases/download/v0.14.3/step_linux_0.14.3_amd64.tar.gz | tar -C /usr --strip=1 -xz step_0.14.3/bin/step && \
+	curl -sL https://releases.hashicorp.com/consul/1.7.2/consul_1.7.2_linux_amd64.zip -o consul.zip && unzip consul.zip && mv consul /usr/bin/ && \
 	pip3 install -r requirements.txt && \
 	ln -s /usr/bin/pip3 /usr/bin/pip && \
 	ln -s /usr/bin/python3 /usr/bin/python
