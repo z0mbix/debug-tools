@@ -3,7 +3,7 @@
 Useful for running on a kubernetes cluster:
 
 ```
-kubectl run --generator=run-pod/v1 -it --rm --image=z0mbix/debug-tools debug-tools
+kubectl run pod -it --rm --image=z0mbix/debug-tools debug-tools
 ```
 
 This will give you a bash shell
@@ -21,7 +21,9 @@ This will give you a bash shell
 - gcc
 - git
 - gzip
+- hey
 - jq
+- kaf
 - kubectl
 - mysql client
 - netcat
@@ -52,7 +54,6 @@ This will give you a bash shell
 - boto3
 - botocore
 - ipaddress
-- ipython
 - kubernetes
 - pipenv
 - redis
