@@ -1,13 +1,18 @@
 .DEFAULT_GOAL := help
+IMAGE_NAME := z0mbix/debug-tools
+IMAGE_TAG := latest
 
 build: ## Build docker image
-	docker build -t z0mbix/debug-tools:latest .
+	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
 
 run: ## Run docker container
-	docker run -it --rm --name debugger z0mbix/debug-tools:latest
+	docker run -it --rm --name debugger $(IMAGE_NAME):$(IMAGE_TAG)
 
-publish: ## Publish docker image to dockerhub
-	docker push z0mbix/debug-tools:latest
+scan: ## Run docker scan to scan the image
+	docker scan $(IMAGE_NAME):$(IMAGE_TAG)
+
+publish: scan ## Publish docker image to dockerhub
+	docker push $(IMAGE_NAME):$(IMAGE_TAG)
 
 help: ## See all the Makefile targets
 	@grep -E '^[a-zA-Z0-9._-]+:.*?## .*$$' $(MAKEFILE_LIST) \
