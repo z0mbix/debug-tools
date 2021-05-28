@@ -24,6 +24,7 @@ This will give you a bash shell
 - hey
 - jq
 - kaf
+- kafkacat
 - kubectl
 - mysql client
 - netcat

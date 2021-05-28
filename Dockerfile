@@ -24,6 +24,7 @@ RUN chmod +x /usr/bin/kubectl && \
 	gzip \
 	ipython \
 	jq \
+	kafkacat \
 	mosh-client \
 	mysql-client \
 	netcat-openbsd \
