@@ -54,6 +54,7 @@ RUN chmod +x /usr/bin/kubectl && \
 	curl -sL https://releases.hashicorp.com/consul/1.7.2/consul_1.7.2_linux_amd64.zip -o consul.zip && unzip consul.zip && mv consul /usr/bin/ && rm consul.zip && \
 	ln -s /usr/bin/python3 /usr/bin/python && \
 	pip install --ignore-installed distlib -r requirements.txt && \
-	tar -C /usr/bin/ -xvzf /tmp/kaf.tar.gz kaf
+	tar -C /usr/bin/ -xvzf /tmp/kaf.tar.gz kaf && \
+	mkdir /root/.kaf
 
 CMD ["/bin/bash"]
