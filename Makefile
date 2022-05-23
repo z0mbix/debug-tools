@@ -1,17 +1,18 @@
 .DEFAULT_GOAL := help
 IMAGE_NAME := z0mbix/debug-tools
 IMAGE_TAG := latest
+PLATFORM := linux/amd64
 
 build: ## Build docker image
-	docker build -t $(IMAGE_NAME):$(IMAGE_TAG) .
+	docker build --platform $(PLATFORM) -t $(IMAGE_NAME):$(IMAGE_TAG) .
 
 run: ## Run docker container
-	docker run -it --rm --name debugger $(IMAGE_NAME):$(IMAGE_TAG)
+	docker run --platform $(PLATFORM) -it --rm --name debugger $(IMAGE_NAME):$(IMAGE_TAG)
 
 scan: ## Run docker scan to scan the image
 	docker scan $(IMAGE_NAME):$(IMAGE_TAG)
 
-publish: scan ## Publish docker image to dockerhub
+publish: ## Publish docker image to dockerhub
 	docker push $(IMAGE_NAME):$(IMAGE_TAG)
 
 help: ## See all the Makefile targets
