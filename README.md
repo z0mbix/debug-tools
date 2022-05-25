@@ -20,6 +20,7 @@ This will give you a bash shell
 - curl
 - gcc
 - git
+- grpcurl
 - gzip
 - hey
 - jq
