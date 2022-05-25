@@ -62,6 +62,7 @@ RUN chmod +x /usr/bin/kubectl && \
 	mkdir /root/.kaf && \
 	mkdir /opt/kafka && \
 	tar -C /opt/kafka --strip 1 -xzf /tmp/kafka.tgz && \
-	rm /tmp/kafka.tgz
+	rm /tmp/kafka.tgz && \
+	echo 'export PATH=$PATH:/opt/kafka/bin' > /etc/profile.d/kafka.sh
 
 CMD ["/bin/bash"]
