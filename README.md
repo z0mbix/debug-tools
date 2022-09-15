@@ -18,15 +18,19 @@ This will give you a bash shell
 - bzip2
 - consul
 - curl
+- fd
 - gcc
 - git
 - grpcurl
 - gzip
 - hey
+- ipython
 - jq
+- openjdk 11 jre
 - kaf
 - kafkacat
 - kubectl
+- mosh
 - mysql client
 - netcat
 - ngrep
@@ -36,10 +40,12 @@ This will give you a bash shell
 - nodejs
 - openssh client
 - openssl
+- pip3
 - pipenv
 - postgresql client
 - python3
 - redis-cli
+- ripgrep
 - rsync
 - socat
 - ssh
